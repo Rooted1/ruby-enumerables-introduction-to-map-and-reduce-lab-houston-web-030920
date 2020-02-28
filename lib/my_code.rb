@@ -1,4 +1,9 @@
 def map_to_negativize(source_array)
+  new_arr = []
+  
+  source_array.each do |element|
+    new_arr << (element * -1)
+  end 
   new_arr 
 end
 
