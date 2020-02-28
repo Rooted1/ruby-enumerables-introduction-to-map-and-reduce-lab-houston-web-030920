@@ -31,11 +31,11 @@ end
 
 def reduce_to_total(source_array, starting_point)
   value = 0 
-  binding.pry
+  
   source_array.each do |element|
     value += element
   end
-  
+  binding.pry
   if starting_point != nil 
     value += starting_point
     
