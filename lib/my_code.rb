@@ -60,9 +60,7 @@ end
 #------------------------------
 
 def reduce_to_any_true(source_array)
-  value = true
+  value = source_array.any?
   
-  source_array.each do |element|
-    
-  end
+  value
 end
