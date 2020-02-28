@@ -48,6 +48,14 @@ end
 #------------------------------
 
 def reduce_to_all_true(source_array)
+   value = true
+  source_array.each do |element|
+    if element
+      value 
+    else 
+      value = false 
+    end
+  end
   value
 end
 
