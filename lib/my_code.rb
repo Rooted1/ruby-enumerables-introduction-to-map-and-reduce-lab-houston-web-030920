@@ -39,12 +39,9 @@ def reduce_to_total(source_array, starting_point)
   binding.pry
   if starting_point != nil 
     value += starting_point
-    
-  else
-    value
   end
   
-  value
+  return value
 end
 
 def reduce_to_all_true(source_array)
