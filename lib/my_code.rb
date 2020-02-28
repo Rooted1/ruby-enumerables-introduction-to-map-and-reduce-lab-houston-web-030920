@@ -12,10 +12,18 @@ def map_to_no_change(source_array)
 end
 
 def map_to_double(source_array)
+  new_arr = []
+  source_array.each do |element|
+    new_arr << (element * 2)
+  end 
   new_arr
 end
 
 def map_to_square(source_array)
+  new_arr = []
+  source_array.each do |element|
+    new_arr << (element ** 2)
+  end 
   new_arr
 end
 
