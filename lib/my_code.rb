@@ -30,13 +30,13 @@ end
 def reduce_to_total(source_array, starting_point)
   value = 0 
   
-  if starting_point != nil
-    value += starting_point
-  end
-  
   source_array.each do |element|
     value += element
   end
+  
+  if starting_point != nil 
+    value += starting_point
+  end 
   
   value
 end
