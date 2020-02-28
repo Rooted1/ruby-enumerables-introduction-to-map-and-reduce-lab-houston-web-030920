@@ -27,11 +27,14 @@ def map_to_square(source_array)
   new_arr
 end
 
-def reduce_to_total(source_array)
+def reduce_to_total(source_array, starting_point)
   value = 0 
   
   source_array.each do |element|
-    value += element
+    if starting_point != nil
+      value += starting_point
+      value += element
+    end
   end
   
   value
